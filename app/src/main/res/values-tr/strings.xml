@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WiFi Analizcisi</string>
+    <string name="apnameedit">Erişim Noktasının Adı</string>
+    <string name="analyzebutton">Analize Başla</string>
+    <string name="alertEnableWifiMessage">Bu uygulamayı kullanabilmek için WiFi\'nız aktif olmalı. Etkinleştirmek istiyor musunuz?</string>
+    <string name="alertEnableWifiTitle">WiFi Aktive Et?</string>
+    <string name="activateDialog">Aktif Et</string>
+    <string name="exitDialog">Programı Kapat</string>
+    <string name="newWifi">Yeni ekle...</string>
+    <string name="tanimHint">Tanımlayıcı gir</string>
+    <string name="saveSql">Dışarı Aktar</string>
+    <string name="clearList">Temizle</string>
+    <string name="fileError">Dosya bulunamadı!</string>
+    <string name="fileExport">Dosya Aktarıldı</string>
+    <string name="clearDbPromptTitle">Veritabanını Temizle</string>
+    <string name="clearDbPromptMsg">Veritabanını temizlemek ister misiniz?</string>
+    <string name="yesButton">Evet</string>
+    <string name="noButton">Hayır</string>
+</resources>

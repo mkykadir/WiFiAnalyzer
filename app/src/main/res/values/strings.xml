@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">WiFiAnalyzer</string>
+    <string name="apnameedit">Name of Access Point</string>
+    <string name="analyzebutton">Start Analyze</string>
+    <string name="alertEnableWifiTitle">Enable WiFi?</string>
+    <string name="alertEnableWifiMessage">You need to have WiFi enabled to work with this application. Enable WiFi?</string>
+    <string name="activateDialog">Activate</string>
+    <string name="exitDialog">Exit Program</string>
+    <string name="newWifi">Add new...</string>
+    <string name="tanimHint">Enter identificator</string>
+    <string name="saveSql">Export Data</string>
+    <string name="clearList">Clear</string>
+    <string name="fileError">File not found!</string>
+    <string name="fileExport">File Exported</string>
+    <string name="clearDbPromptTitle">Clear DB</string>
+    <string name="clearDbPromptMsg">Do you want to clear database?</string>
+    <string name="yesButton">Yes</string>
+    <string name="noButton">No</string>
 </resources>
