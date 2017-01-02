@@ -173,7 +173,6 @@ public class MainActivity extends AppCompatActivity {
         builder.setPositiveButton(R.string.yesButton, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                // TODO clear table
                 DataBaseHelper mainDb = new DataBaseHelper(MainActivity.this);
                 clearList();
                 mainDb.clearTable();
