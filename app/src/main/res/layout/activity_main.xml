@@ -22,56 +22,34 @@
 
   <LinearLayout
       android:id="@+id/secondLayout"
-      android:layout_width="wrap_content"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:orientation="horizontal">
 
    <EditText
-       android:layout_width="wrap_content"
+       android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:inputType="text"
        android:ems="10"
        android:id="@+id/tanimText"
        android:hint="@string/tanimHint"
-       android:maxLines="1" />
+       android:maxLines="1"
+       android:layout_weight="1.5"/>
 
    <Button
        android:text="@string/analyzebutton"
-       android:layout_width="wrap_content"
+       android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:id="@+id/analyzeButton"
        android:onClick="analyzeWifi"
+       android:layout_weight="2.2"
        />
 
   </LinearLayout>
 
-  <ExpandableListView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/logsList"
-      />
-
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal">
-
-   <Button
-       android:text="@string/saveSql"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:id="@+id/saveSqlButton"
-       android:onClick="exportData"
-       android:layout_weight="1"/>
-
-   <Button
-       android:text="@string/clearList"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:id="@+id/clearListButton"
-       android:textAlignment="center"
-       android:onClick="clearData"
-       android:layout_weight="1"/>
-
-  </LinearLayout>
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/logsList"
+        />
 </LinearLayout>

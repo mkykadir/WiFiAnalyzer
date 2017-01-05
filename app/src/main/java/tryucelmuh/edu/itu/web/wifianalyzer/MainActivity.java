@@ -11,6 +11,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -75,6 +78,29 @@ public class MainActivity extends AppCompatActivity {
         apNameList.setAdapter(adapter);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.extractData:
+                exportData();
+                return true;
+            case R.id.clearData:
+                clearData();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+
+    }
+
     public void analyzeWifi(View v){
         mainBssid itemToAdd;
         String getSelectedSsid = apNameList.getSelectedItem().toString();
@@ -98,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         mainList.setAdapter(new tryucelmuh.edu.itu.web.wifianalyzer.ExpandableListAdapter(this, mainItems, uniqueBssidList));
     }
 
-    public void exportData(View v){
+    public void exportData(){
         DataBaseHelper mainDb = new DataBaseHelper(this);
         for(HashMap.Entry<mainSsid, List<mainBssid>> entry : uniqueBssidList.entrySet()){
             mainDb.insertValue(entry);
@@ -132,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void clearData(View v){
+    public void clearData(){
         clearDatabase().show();
     }
 
